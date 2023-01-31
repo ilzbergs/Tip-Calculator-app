@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <header>
+      <h1>
+        <div>spli</div>
+        <div>tter</div>
+      </h1>
+    </header>
+    <div class="container">
+      <div class="input-part">
+        <div class="wrapper bill">
+          <h3>Bill</h3>
+          <div class="bill-wrapper">
+            <img src="./images/icon-dollar.svg" class="icon" alt="A dollar symbol">
+            <input type="number" id="bill" placeholder="0">
+          </div>
+        </div>
+        <div class="wrapper tip">
+          <h3>Select Tip %</h3>
+          <div class="grid-container">
+            <div class="grid-item">5%</div>
+            <div class="grid-item">10%</div>
+            <div class="grid-item">15%</div>
+            <div class="grid-item">25%</div>
+            <div class="grid-item">50%</div>
+            <input type="number" placeholder="Custom" id="tip"  class="grid-item">
+          </div>
+        </div>
+        <div class="wrapper person">
+          <div class="error-wrapper">
+            <h3>Number of People</h3>
+            <p id="error">Can't be zero</p>
+          </div>
+          <div class="bill-wrapper">
+            <img src="./images/icon-person.svg" class="icon" alt="A person symbol" aria-hidden="true">
+            <input type="number" placeholder="0" id="people">
+          </div>
+        </div>
+      </div>
+      <div class="result-part">
+        <div class="result-wrapper">
+  <div class="result">
+          <div class="description">
+            <h4>Tip Amount</h4>
+            <p class="person">/ person</p>
+          </div>
+          <div class="price">0.0</div>
+        </div>
+        <div class="result">
+          <div class="description">
+            <h4>Total</h4>
+            <p class="person">/ person</p>
+          </div>
+          <div class="price">0.0</div>
+        </div>
+
+        </div>
+      
+        <button type="reset" id="reset" class="reset" onClick="window.location.reload()">reset</button>
+      </div>
+
+    </div>
+  </main>
+  <!-- <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </footer> -->
+  <script src="./script.js"></script>
+
+</body>
+
+</html>
